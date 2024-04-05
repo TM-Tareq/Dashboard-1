@@ -167,3 +167,14 @@ aside .sidebar a:last-child {
 aside .sidebar a i {
     padding: 10px;
 }
+aside .sidebar a.active {
+    background: var(--color-light);
+    color: var(--color-primary);
+    margin-left: 0;
+}
+aside .sidebar a.active::before {
+    content: "";
+    width: 6px;
+    height: 100%;
+    background: var(--color-primary);
+}
